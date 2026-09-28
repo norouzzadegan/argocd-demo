@@ -5,7 +5,7 @@ metadata:
   namespace: argocd-demo
 spec:
   
-  replicas: 8
+  replicas: 3
   selector:
     matchLabels:
       app: argocd-demo
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: jfrog.balout.co/all-docker/gholi:1.27
+          image: jfrog.balout.co/all-docker/nginx:1.27
           ports:
             - containerPort: 80
           resources:
