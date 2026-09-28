@@ -4,7 +4,7 @@ metadata:
   name: argocd-demo
   namespace: argocd-demo
 spec:
-  replicas: 3
+  replicas: 8
   selector:
     matchLabels:
       app: argocd-demo
