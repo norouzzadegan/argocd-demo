@@ -16,9 +16,15 @@ spec:
     namespace: argocd-demo
 
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+    syncOptions:
+      - CreateNamespace=false
+      - ApplyOutOfSyncOnly=true
+      - Replace=false
+      - ServerSideApply=false
+  # syncPolicy:
+    # automated:
+    #   prune: true
+    #   selfHeal: true
 
     syncOptions:
       - CreateNamespace=true
