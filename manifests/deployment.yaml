@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:1.27
+          image: jfrog.balout.co/all-docker/nginx:1.27
           ports:
             - containerPort: 80
           resources:
